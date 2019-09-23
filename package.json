@@ -1,0 +1,28 @@
+{
+  "name": "image-resize-express-sharp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/symplcloud/image-resize-express-sharp.git"
+  },
+  "keywords": [
+    "image",
+    "resize",
+    "benchmark"
+  ],
+  "author": "Sean Lee <seanlee@sympl.cloud>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/symplcloud/image-resize-express-sharp/issues"
+  },
+  "homepage": "https://github.com/symplcloud/image-resize-express-sharp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sharp": "^0.23.0"
+  }
+}
