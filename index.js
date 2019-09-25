@@ -1,8 +1,16 @@
 const sharp = require('sharp')
+const express = require('express')
+const app = express()
+const port = 5000
 
-sharp('input.jpg')
-  .resize({ width: 320 })
-  .toFile('output.jpg', function(err) {
-    // output.jpg is a 300 pixels wide and 200 pixels high image
-    // containing a scaled and cropped version of input.jpg
-  });
+app.get('/', (req, res) => {
+  sharp('input.jpg')
+    .resize({ width: 320 })
+    .toFile('output.jpg')
+    .then(info => {
+      res.send(info)
+    });
+})
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
